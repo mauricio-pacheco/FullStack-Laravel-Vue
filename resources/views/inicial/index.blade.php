@@ -11,12 +11,12 @@
 
 				<div class="feature-block">
 					<h3>
-						<i class="entypo-cog"></i>
-						Settings
+						<i class="entypo-newspaper"></i>
+						ARTIGOS
 					</h3>
 
 					<p>
-						Fifteen no inquiry cordial so resolve garrets as. Impression was estimating surrounded solicitude indulgence son shy.
+						Confira nossos artigos exclusivos sobre os mais variados temas sobre Programação.
 					</p>
 				</div>
 
@@ -26,12 +26,12 @@
 
 				<div class="feature-block">
 					<h3>
-						<i class="entypo-gauge"></i>
-						Dashboard
+						<i class="entypo-book-open"></i>
+						PUBLICAÇÕES
 					</h3>
 
 					<p>
-						On am we offices expense thought. Its hence ten smile age means. Seven chief sight far point any. Of so high into easy.
+						Publicações de conteúdos atualizados no momento.
 					</p>
 				</div>
 
@@ -41,12 +41,12 @@
 
 				<div class="feature-block">
 					<h3>
-						<i class="entypo-lifebuoy"></i>
-						24/7 Support
+						<i class="entypo-publish"></i>
+						SCRIPTS
 					</h3>
 
 					<p>
-						Extremely eagerness principle estimable own was man. Men received far his dashwood subjects new.
+						Acervo de Scripts para auxiliar em seus projetos.
 					</p>
 				</div>
 
@@ -75,10 +75,10 @@
 
 				<div class="portfolio-info">
 					<h3>
-						<a href="#">Portfolio</a>
+						<a href="#">Documentações</a>
 					</h3>
 
-					<p>Fifteen no inquiry cordial so resolve garrets as. Impression was estimating surrounded solicitude indulgence s...</p>
+					<p>Seguem alguns links de documentações de algumas tecnologias.</p>
 				</div>
 
 			</div>
@@ -87,21 +87,17 @@
 
 				<!-- Portfolio Item in Widget -->
 				<div class="portfolio-item">
-					<a href="#" class="image">
+					<a href="https://laravel.com/docs/10.x/readme" class="image" target="_blank">
 						<img src="{{ asset('inicial/assets/images/portfolio-thumb-1.png') }}" class="img-rounded" />
 						<span class="hover-zoom"></span>
 					</a>
 
 					<h4>
-						<a href="#" class="like">
-							<i class="entypo-heart"></i>
-						</a>
-
-						<a href="#" class="name">Neon</a>
+						<a href="#" class="name">Laravel</a>
 					</h4>
 
 					<div class="categories">
-						<a href="#">Web Design / Development</a>
+						<a href="https://laravel.com/docs/10.x/readme" target="_blank">Documentação Atual</a>
 					</div>
 				</div>
 
@@ -111,21 +107,17 @@
 
 				<!-- Portfolio Item in Widget -->
 				<div class="portfolio-item">
-					<a href="#" class="image">
-						<img src="{{ asset('inicial/assets/images/portfolio-thumb-1.png') }}" class="img-rounded" />
+					<a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" class="image" target="_blank">
+						<img src="{{ asset('inicial/assets/images/portfolio-thumb-2.png') }}" class="img-rounded" />
 						<span class="hover-zoom"></span>
 					</a>
 
 					<h4>
-						<a href="#" class="like liked">
-							<i class="entypo-heart"></i>
-						</a>
-
-						<a href="#" class="name">Motorola</a>
+						<a href="#" class="name">Bootstrap</a>
 					</h4>
 
 					<div class="categories">
-						<a href="#">Photography</a>
+						<a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" target="_blank">Documentação Atual</a>
 					</div>
 				</div>
 
@@ -135,21 +127,17 @@
 
 				<!-- Portfolio Item in Widget -->
 				<div class="portfolio-item">
-					<a href="#" class="image">
-						<img src="{{ asset('inicial/assets/images/portfolio-thumb-1.png') }}" class="img-rounded" />
+					<a href="https://nodejs.org/en/docs" class="image" target="_blank">
+						<img src="{{ asset('inicial/assets/images/portfolio-thumb-3.png') }}" class="img-rounded" />
 						<span class="hover-zoom"></span>
 					</a>
 
 					<h4>
-						<a href="#" class="like">
-							<i class="entypo-heart"></i>
-						</a>
-
-						<a href="#" class="name">Dribbble</a>
+						<a href="#" class="name">Node JS</a>
 					</h4>
 
 					<div class="categories">
-						<a href="#">UI Design</a>
+						<a href="https://nodejs.org/en/docs" target="_blank">Documentação Atual</a>
 					</div>
 				</div>
 

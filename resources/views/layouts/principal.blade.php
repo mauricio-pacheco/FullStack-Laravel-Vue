@@ -53,8 +53,8 @@ return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo
 
                     <section class="site-logo">
 
-                        <a href="#">
-                            <img src="{{ asset('inicial/assets/images/logo@2x.png') }}" width="240" />
+                        <a href="{{ route('pagina_inicial') }}">
+                            <img src="{{ asset('inicial/assets/images/logo@2x.png') }}" width="240" alt="Casa da Web - O Ambiente do Desenvolvimento" title="Casa da Web - O Ambiente do Desenvolvimento" />
                         </a>
 
                     </section>
@@ -75,58 +75,17 @@ return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo
                                 <ul>
                                     <li>
                                         <a href="#">
-                                            <span>Link</span>
+                                            <span>Artigos</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span>Link</span>
+                                            <span>Publicações</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span>Link</span>
-                                        </a>
-
-                                        <ul>
-                                            <li>
-                                                <a href="#">
-                                                    <span>Sub Link 1</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <span>Sub Link 2</span>
-                                                </a>
-
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">
-                                                            <span>Sub Link de sub link 1</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <span>Sub Link de sub link 2</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <span>Sub 3</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span>Link</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span>Link</span>
+                                            <span>Scripts</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -143,7 +102,7 @@ return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo
                             </li>
                             <li>
                                 <a href="#">
-                                    <span>Contato</span>
+                                    <span>Sobre</span>
                                 </a>
                             </li>
                          </ul>
@@ -258,19 +217,19 @@ return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo
 
 						<div class="slide-content">
 							<h2>
-								<small>Neon - Bootstrap 3</small>
-								Dashboard &amp; Front-end
+								<small>DASHBOARDS LARAVEL</small>
+								Back-end
 							</h2>
 
 							<p class="slide-content">
-								Neon &ndash; is flat admin template for multi-purpose usage built<br /> with the latest version of Bootstrap &ndash; 3.
+								Melhores Artigos e Publicações<br /> compatíveis com a última versão do Laravel.
 							</p>
 						</div>
 
 						<div class="slide-image">
 
 							<a href="#">
-								<img src="{{ asset('inicial/assets/images/slide-img-1.png') }}" class="img-responsive" />
+								<img src="{{ asset('inicial/assets/images/slide-img-2.png') }}" class="img-responsive" />
 							</a>
 						</div>
 
@@ -288,40 +247,14 @@ return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo
 
 						<div class="slide-content text-right">
 							<h2>
-								<small>Neon - Bootstrap 3</small>
-								Powerful Admin Template
+								<small>Dashboard - Vue JS</small>
+								Front-end
 							</h2>
 
 							<p class="slide-content">
-								Designed for Bootstrap Framework, the theme works <br />
-								perfectly on any device, you can use it on<br />
-								 your smartphone, tablet or your laptop.
+								Melhores Artigos e Publicações<br /> compatíveis com a última versão do Vue.
 							</p>
 
-						</div>
-
-					</div>
-
-					<!-- Slide 3 -->
-					<div class="slide">
-
-						<div class="slide-content">
-							<h2>
-								<small>Neon - Bootstrap 3</small>
-								Responsive &amp; Retina
-							</h2>
-
-							<p class="slide-content">
-								Device type is not a problem if you use Neon theme for your application UI.<br />
-								It's packed with latest Bootstrap framework and it's compatible for Large Screens, Tablets and Smartphones.
-							</p>
-						</div>
-
-						<div class="slide-image">
-
-							<a href="#">
-								<img src="{{ asset('inicial/assets/images/slide-img-1.png') }}" class="img-responsive" />
-							</a>
 						</div>
 
 					</div>
@@ -477,7 +410,38 @@ return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo
 	<div class="container">
 
 		<div class="row">
+            <?php if(isMobileDevice()) { ?>
 
+                <div class="col-sm-4">
+
+                        Existem várias maneiras de compartilhar conhecimento no ambiente de trabalho e construir uma cultura de aprendizagem.
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    <h5>Localização</h5>
+
+                    <p>
+                        Frederico Westphalen <br />
+                        Rio Grande do Sul <br />
+                        Brasil
+                    </p>
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    <h5>Contatos</h5>
+
+                    <p>
+                        E-mail <br />
+                        comercial@casadaweb.net <br />
+
+                    </p>
+
+                </div>
+            <?php } else { ?>
 			<div class="col-sm-3" style="width: 8%">
 
 				<a href="#">
@@ -515,7 +479,7 @@ return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo
 				</p>
 
 			</div>
-
+        <?php } ?>
 		</div>
 
 	</div>

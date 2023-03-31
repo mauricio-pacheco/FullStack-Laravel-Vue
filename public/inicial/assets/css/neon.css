@@ -84,8 +84,8 @@ p {
 }
 .vspace,
 .vspacer {
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .content-section {
   padding-top: 50px;
@@ -736,7 +736,7 @@ body .carousel-inner > .active {
   color: #999999;
 }
 .portfolio-widget {
-  margin: 50px 0;
+  margin: 25px 0;
 }
 .portfolio-widget .portfolio-info h3 {
   margin: 0;
@@ -2051,7 +2051,7 @@ section.blog .sidebar .sidebar-content .discussion-list li .details p {
     margin: 0px;
   }
   .features-blocks .feature-block {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
   .portfolio-widget {
     margin: 20px 0;

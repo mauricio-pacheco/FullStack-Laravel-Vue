@@ -36,11 +36,25 @@ class RegisteredUserController extends Controller
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
+        //INVERTER A DATA
+        function inverteData($data) {
+            if(count(explode("/",$data)) > 1) {
+            return implode("-",array_reverse(explode("/",$data)));
+            } elseif(count(explode("-",$data)) > 1) {
+            return implode("/",array_reverse(explode("-",$data)));
+            }
+        }
+
+        $data_nascimento_invertida = inverteData($request->data_nascimento);
+
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
             'telefone' => $request->telefone,
+            'celular' => $request->celular,
+            'data_nascimento' => $data_nascimento_invertida,
+            'cidade' => $request->cidade,
         ]);
 
         event(new Registered($user));
